@@ -113,7 +113,7 @@ namespace eShopForecastModelsTrainer
 
             // Predicts the nextperiod/month forecast to the one provided
             prediction = predictionEngine.Predict(dataSample);
-            Console.WriteLine($"Product: {dataSample.productId}, month: {dataSample.month + 1}, year: {dataSample.year} - Forecast Prediction (units): {prediction.Score}");
+            //Console.WriteLine($"Product: {dataSample.productId}, month: {dataSample.month + 1}, year: {dataSample.year} - Forecast Prediction (units): {prediction.Score}");
 
             Console.WriteLine(" ");
 
@@ -149,7 +149,7 @@ namespace eShopForecastModelsTrainer
             };
 
             prediction = predictionEngine.Predict(dataSample);
-            Console.WriteLine($"Product: {dataSample.productId}, month: {dataSample.month + 1}, year: {dataSample.year} - Forecasting (units): {prediction.Score}");
+            //Console.WriteLine($"Product: {dataSample.productId}, month: {dataSample.month + 1}, year: {dataSample.year} - Forecasting (units): {prediction.Score}");
         }
     }
 }
