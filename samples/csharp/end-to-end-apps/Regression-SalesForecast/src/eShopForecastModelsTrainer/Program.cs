@@ -13,7 +13,8 @@ namespace eShopForecastModelsTrainer
         {       
             try
             {
-                MLContext mlContext = new MLContext(seed: 1);  //Seed set to any number so you have a deterministic environment
+                // Initialize ML.NET assemblies and set random seed for consistent test runs
+                MLContext mlContext = new MLContext(seed: 1);
 
 
                 ////////////////////////////////////////////////////////////////
